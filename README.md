@@ -26,3 +26,5 @@ S019R03.edf  (run 3, executed, 15 cues)
 Accepts left/right fist runs — 3, 7, 11 (executed) or 4, 8, 12 (imagined) — with all 64 channels. Refuses fists/feet and baseline runs since the model was only trained for binary classification of left/right.
 
 **Subjects the model never saw: 3, 19, 39, 68, 87.** These subjects were randomly selected and left out of training for use in the prediction script.
+
+Note: Refer to comments at the top of predict.py for more details on running the prediction script if needed
