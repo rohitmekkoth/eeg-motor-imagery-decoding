@@ -23,8 +23,6 @@ S019R03.edf  (run 3, executed, 15 cues)
    20.50  right    0.713
 ```
 
-Also usable as a function: `from predict import predict_edf`.
+Accepts left/right fist runs — 3, 7, 11 (executed) or 4, 8, 12 (imagined) — with all 64 channels. Refuses fists/feet and baseline runs since the model was only trained for binary classification of left/right.
 
-Accepts left/right fist runs — 3, 7, 11 (executed) or 4, 8, 12 (imagined) — with all 64 channels and at least 3.5 s of recording after each cue. Refuses fists/feet and baseline runs.
-
-**Subjects the model never saw: 3, 19, 39, 68, 87.** `predict.py` warns if the file is from a training subject. Results vary a lot between people (0.38 to 0.98 across all subjects; the five holdouts scored 0.51, 0.54, 0.61, 0.61, 0.74), so a single subject tells you little.
+**Subjects the model never saw: 3, 19, 39, 68, 87.** These subjects were randomly selected and left out of training for use in the prediction script.
