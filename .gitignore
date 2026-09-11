@@ -6,3 +6,6 @@ __pycache__/
 *.npz
 .ipynb_checkpoints/
 .DS_Store
+
+# The exported model is small and required by predict.py.
+!artifacts/fbcsp_model.npz
