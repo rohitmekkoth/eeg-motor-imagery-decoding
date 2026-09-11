@@ -1,6 +1,6 @@
 # Left vs right fist decoding from EEG
 
-Predicts whether a person moved their **left** or **right** fist from 3 seconds of 64-channel EEG, using the PhysioNet [EEG Motor Movement/Imagery Database](https://physionet.org/content/eegmmidb/1.0.0/) (EEGMMIDB). Filter-bank CSP + shrinkage LDA, trained on 101 subjects. On a person the model has never seen, it is right **62.6%** of the time (chance = 50%).
+Predicts whether a person moved their **left** or **right** fist from 64-channel EEG data, using the PhysioNet [EEG Motor Movement/Imagery Database](https://physionet.org/content/eegmmidb/1.0.0/) (EEGMMIDB). Filter-bank CSP + shrinkage LDA is the final model used, trained on 101 subjects. On a person the model has never seen, it is right **62.6%** of the time (chance = 50%).
 
 Full pipeline, reasoning and evaluation: `notebooks/executed_lr.ipynb`.
 
