@@ -13,15 +13,8 @@ pip install -r requirements.txt
 python predict.py path/to/S019R03.edf     # add --compare to show the annotated labels
 ```
 
-One prediction per cue in the file:
-
-```
-S019R03.edf  (run 3, executed, 15 cues)
- onset_s  pred   p_right
-    4.10  left     0.317
-   12.30  left     0.406
-   20.50  right    0.713
-```
+One prediction per cue in the input edf file 
+See example output below run on Subject 19, Run 3 with --compare flag:
 
 ```
 S019R03.edf  (run 3, executed, 15 cues)
