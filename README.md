@@ -7,7 +7,7 @@ Full pipeline, reasoning and evaluation: `notebooks/executed_lr.ipynb`.
 ## Running the prediction script
 
 ```bash
-python -m venv .venv && source .venv/bin/activate
+python -m venv .venv && source .venv/bin/activate #may need to use python3 if on mac
 pip install -r requirements.txt
 
 python predict.py path/to/S019R03.edf     # add --compare to show the annotated labels
